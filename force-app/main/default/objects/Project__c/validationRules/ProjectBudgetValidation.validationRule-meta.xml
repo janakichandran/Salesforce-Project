@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ProjectBudgetValidation</fullName>
+    <active>true</active>
+    <errorConditionFormula>Budget__c  &gt;  Account_Id__r.Budget_Limit__c</errorConditionFormula>
+    <errorDisplayField>Budget__c</errorDisplayField>
+    <errorMessage>Budget should not exceed budget limit</errorMessage>
+</ValidationRule>

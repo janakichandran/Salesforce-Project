@@ -1,0 +1,11 @@
+<aura:component >
+    <aura:attribute name="newAccount" type="Account" default ="{'sobjectType' : 'Account' , 'Name' : 'TestAccount1'}" />
+    <aura:handler name="init" value = "{!this}" action ="{!c.doInit}" />
+    <aura:attribute name="newList1" type="List" default ="['aaa' , 'bbb' , 'ccc' , 'ddd']" />
+    <aura:attribute name="newContact" type="Contact" />
+        Account Name : {!v.newAccount.Name}
+    <hr/>
+        List consists of :  {!v.newList1[0]}  {!v.newList1[1]}  {!v.newList1[2]}  {!v.newList1[3]}
+    <hr/> 
+        Contact details : {!v.newContact.LastName} - {!v.newContact.Mail}
+</aura:component>
